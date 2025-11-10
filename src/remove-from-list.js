@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../lib/errors');
+// const { NotImplementedError } = require('../lib/errors');
 const { ListNode } = require('../extensions/list-node.js');
 
 /**
@@ -40,21 +40,19 @@ function removeKFromList(l, k) {
 }
 
 // Example usage:
+// function createList(values) {
+//   if (values.length === 0) return null;
+//   let head = new ListNode(values[0]);
+//   let current = head;
+//   for (let i = 1; i < values.length; i++) {
+//     current.next = new ListNode(values[i]);
+//     current = current.next;
+//   }
+//   return head;
+// }
 
-// Example usage:
-function createList(values) {
-  if (values.length === 0) return null;
-  let head = new ListNode(values[0]);
-  let current = head;
-  for (let i = 1; i < values.length; i++) {
-    current.next = new ListNode(values[i]);
-    current = current.next;
-  }
-  return head;
-}
-
-let list = createList([3, 1, 2, 3, 4, 5]);
-console.log('Result:', removeKFromList(list, 3)); 
+// let list = createList([3, 1, 2, 3, 4, 5]);
+// console.log('Result:', removeKFromList(list, 3)); 
 
 module.exports = {
   removeKFromList
